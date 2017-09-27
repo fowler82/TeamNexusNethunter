@@ -4,7 +4,7 @@ SUBLEVEL = 107
 EXTRAVERSION = -XXS5EQG2
 NAME = TOSSUG Baby Fish
 
-TOOLCHAIN_DIR =/home/minealex2244/Desktop/SM-G920F/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+TOOLCHAIN_DIR =/home/madscript/Toolchains-Compilation/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -196,7 +196,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?=arm64
-CROSS_COMPILE	?=/home/minealex2244/Desktop/SM-G920F/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE	?=/home/madscript/Toolchains-Compilation/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
