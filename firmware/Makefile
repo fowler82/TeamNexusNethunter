@@ -176,8 +176,7 @@ else
 $(warning '$(TSPFIRMWARE_DIRECTORY)' directory dose not exist)
 endif
 
-fw-shipped-$(CONFIG_KEYBOARD_ABOV_TOUCH) += abov/abov_noble.fw abov/abov_zen.fw \
-							abov/abov_valley.fw abov/abov_a8x.fw
+fw-shipped-$(CONFIG_KEYBOARD_ABOV_TOUCH) += abov/abov_noble.fw abov/abov_zen.fw
 fw-shipped-$(CONFIG_KEYBOARD_ABOV_TOUCH_FOLDER) += abov/abov_tk_royce.fw
 fw-shipped-$(CONFIG_KEYBOARD_ABOV_FT16XX_TOUCH_VALLEY) += abov/abov_valley.fw
 fw-shipped-$(CONFIG_KEYBOARD_TC300K) += coreriver/tc305k_a8x.fw
