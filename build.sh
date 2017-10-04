@@ -66,18 +66,18 @@ export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
 [ -x "${CROSS_COMPILE}gcc" ] ||
 ABORT "Unable to find gcc cross-compiler at location: ${CROSS_COMPILE}gcc"
 
-[ "$TARGET" ] || TARGET=nethunter_zerofltexx
+[ "$TARGET" ] || TARGET=nethunter
 [ "$1" ] && DEVICE=$1
 [ "$2" ] && VARIANT=$2
-[ "$DEVICE" ] || DEVICE=zerofltexx
-[ "$VARIANT" ] || VARIANT=eur
+[ "$DEVICE" ] || DEVICE=zeroflte
+[ "$VARIANT" ] || VARIANT=xx
 
-DEFCONFIG=${TARGET}_defconfig
+DEFCONFIG=${TARGET}_${DEVICE}${VARIANT}_defconfig
 
 [ -f "$RDIR/arch/$ARCH/configs/${DEFCONFIG}" ] ||
 ABORT "Config $DEFCONFIG not found in $ARCH configs!"
 
-export LOCALVERSION=$TARGET-$DEVICE-$VARIANT-$VER
+export LOCALVERSION=madScript-$TARGET-$DEVICE-$VARIANT-$VER
 
 CLEAN_BUILD()
 {
